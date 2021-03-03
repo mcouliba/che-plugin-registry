@@ -1,7 +1,7 @@
 apiVersion: v2
 publisher: redhat
 name: workshop-tools
-version: 4.6.0
+version: 5.0.0
 type: VS Code extension
 displayName: Workshop Tools
 title: Workshop Tools
