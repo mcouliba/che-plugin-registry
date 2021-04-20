@@ -1,0 +1,22 @@
+apiVersion: v2
+publisher: redhat
+name: workshop-tools
+version: 5.0.1
+type: VS Code extension
+displayName: Workshop Tools
+title: Workshop Tools
+description: Develop, deploy and debug Cloud Native applications
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/redhat-developer/vscode-openshift-tools
+category: Other
+firstPublicationDate: "2020-02-06"
+spec:
+  containers:
+    - image: quay.io/mcouliba/remote-plugin-workshop-tooling:5.0
+      name: workshop-tools
+      memoryLimit: "4G"
+  extensions:
+    - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-java-debug/vscode-java-debug-0.26.0.vsix
+    - https://download.jboss.org/jbosstools/static/jdt.ls/stable/java-0.69.0-2547.vsix
+    - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-kubernetes-tools/vscode-kubernetes-tools-1.2.1.vsix
+    - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
